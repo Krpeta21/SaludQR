@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FAFE"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="186dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/logosaludqr">
+
+            </ImageView>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="36.7dp"
+            android:layout_marginRight="62dp">
+
+
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="310dp"
+                android:layout_height="48dp"
+                android:background="@drawable/custom_input"
+                android:hint="Introduce tu correo"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="45dp"
+                android:textSize="15sp"></EditText>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/ic_email"></ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="12.7dp"
+            android:layout_marginRight="62dp">
+
+
+            <EditText
+
+
+                android:id="@+id/contraseña"
+                android:layout_width="310dp"
+                android:layout_height="48dp"
+                android:background="@drawable/custom_input"
+                android:hint="Ingresa tu contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="45dp"
+                android:textSize="15sp"></EditText>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/ic_pass"></ImageView>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="62dp"
+            android:onClick="Scanner"
+            android:text="Entrar"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#46B063">
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnInvitado"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="62dp"
+            android:onClick="Invitado"
+            android:text="No soy personal de salud"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#DA7B5D"></Button>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

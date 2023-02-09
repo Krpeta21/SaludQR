@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FAFE"
+    tools:context=".QRScanner">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:src="@drawable/buscar"
+            app:layout_constraintBottom_toTopOf="@+id/imageView16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.705"></ImageView>
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/pacientes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="250dp"
+            android:src="@drawable/doctor"
+            app:layout_constraintBottom_toTopOf="@+id/imageView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="356dp"
+            android:layout_height="80dp"
+            android:src="@drawable/encabezadopaciente"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="400dp"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/notificacion"
+            app:layout_constraintBottom_toTopOf="@+id/imageView17"
+            app:layout_constraintEnd_toStartOf="@+id/imageView20"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="240dp"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="18dp"
+            android:layout_height="29dp"
+            android:src="@drawable/lineas"
+            app:layout_constraintBottom_toTopOf="@+id/imageView17"
+            android:layout_marginRight="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/transparent_background"
+            app:menu="@menu/bottom_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#008134"
+        android:src="@drawable/ic_scanner"
+        app:layout_anchor="@id/bottomAppBar"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
